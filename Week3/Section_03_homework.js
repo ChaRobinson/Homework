@@ -10,56 +10,24 @@ function greetCustomer() {
 greetCustomer();
 
 function getPizzaOrder(size, crust, ...toppings) {
-  console.log(size);
-  console.log(crust);
-  console.log(toppings);
   console.log(`One ${size}, ${crust} crust pizza with ${toppings} coming up!`);
+  return [size, crust, toppings];
 }
-getPizzaOrder(
-  "Large",
-  "Thin",
-  "Anchovies",
-  " Extra Cheese",
-  " Olives",
-  " Peppers",
-  " and Pineapples"
-);
 
-let preparePizza2 = (size, crust, listOfToppings) => {
-  console.log(size);
-  console.log(crust);
-  console.log(listOfToppings);
+let preparePizza = ([size, crust, toppings])=> {
   console.log(`...Cooking Pizza`);
-  this.size = "Large";
-  this.crust = "Thin";
-  (this.listOfToppings = "Extra Cheese"), "Onions", "Peppers";
+  let pizzaObject = {
+    size: size,
+    crust: crust,
+    toppings: toppings
+  };
+  return pizzaObject;
+}
+
+
+servePizza = (pizzaObject) => {
+console.log( `Pizza is ready, you ordered a: ${pizzaObject.size}, ${pizzaObject.crust} crust pizza, with ${pizzaObject.toppings}`);
+return pizzaObject;
 };
 
-function printArray(array) {
-  const object = {
-    pizza: "pizza supreme",
-    chips: "Lays",
-    cheetos: "Not good"
-  };
-  for (let array in object) {
-    console.log(`${array} ${[object.pizza]}`);
-    console.log(`${array} ${[object.chips]}`);
-    console.log(`${array} ${[object.cheetos]}`);
-  }
-}
-printArray();
-
-function servePizza(size, crust, toppings) {
-  for (const pizza of servePizza) {
-    const pizza = (size = "Large"),
-      crust = "Thin",
-      toppings = ["pepperoni", "sausage", "onion"];
-  }
-  console.log(
-    `One ${pizza.size}, ${pizza.crust} pizza with ${pizza.toppings} coming right up!`
-  );
-}
-
-servePizza(size, crust, toppings);
-
-// I apologize it's incomplete, but I have zero idea of where to take this anymore.
+servePizza(preparePizza(getPizzaOrder("Small", "thin", "pepperoni", "onion", "sausage", "peppers")));
