@@ -1,0 +1,74 @@
+body {
+  background-color: #F6B693;
+  background-image: url("https://i.ibb.co/55nRmXN/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+main {
+  font-family: 'Lucida Sans';
+  color: #F46553;
+}
+
+header {
+  background: #406B64;
+  text-align: center;
+  padding: 25px;
+  margin-left: 30%;
+  margin-right: 5%;
+  position: fixed;
+}
+
+span.only {
+  display: block;
+  padding-top: 15%;
+}
+
+span{
+  display: block;
+  padding-top: 25%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fredericka the Great', Georgia;
+  font-stretch: extra-expanded;
+  color: #F46553;
+}
+
+div.intro {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
+
+div.first {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
+
+div.second {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
+
+div.third {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
+
+div.fourth {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
+
+div.last {
+  margin-left: 500px;
+  padding-right: 500px;
+  background-position: center;
+}
