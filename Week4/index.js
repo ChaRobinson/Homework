@@ -5,3 +5,6 @@ console.log("This is my outer HTML for div"), document.querySelector("div").oute
 console.log("This is my document's class list for div"), document.querySelector("div").classList;
 console.log("These are ALL of my class lists for div"), document.getElementsByTagName("div").classList;
 
+const pNote = document.getElementById("test").add("string bean");
+console.log(pNote);
+

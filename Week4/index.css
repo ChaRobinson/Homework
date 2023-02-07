@@ -72,3 +72,17 @@ div.last {
   padding-right: 500px;
   background-position: center;
 }
+
+#idExample {
+  color: #82A7A6;
+}
+
+#anotherExample {
+  color: #82A7A6;
+}
+
+#complex > li {
+  color: black;
+  text-align: center;
+  text-shadow: 5px 5px #F46553;
+}
